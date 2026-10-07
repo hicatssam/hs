@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Hicats Sam | HS Real Music — Official Artist Website</title>
+
+  <meta name="description" content="Official website of Hicats Sam, also known as HS. Listen to FEAR, discover the artist story, and follow the journey of  rap from Gaza.">
+  <meta name="keywords" content="Hicats Sam, HS, HS Real Music, HSREALMUSIC, FEAR, Gaza rapper, Palestinian artist, rap, music from Gaza">
+  <meta name="author" content="Hicats Sam">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#030303">
+
+  <link rel="canonical" href="https://www.hsrealmusic.com/profile.html">
+  <link rel="alternate" hreflang="en" href="https://www.hsrealmusic.com/profile.html">
+  <link rel="alternate" hreflang="ar" href="https://www.hsrealmusic.com/ar/profile.html">
+  <link rel="alternate" hreflang="x-default" href="https://www.hsrealmusic.com/profile.html">
+
+  <!-- Favicon / Website Icon -->
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Hicats Sam | HS Real Music — Official Artist Website">
+  <meta property="og:description" content="Listen to FEAR, discover the artist story, and follow the journey of cinematic rap from Gaza.">
+  <meta property="og:image" content="https://raw.githubusercontent.com/malkaalay/hs/main/images/fear-artwork.jpeg">
+  <meta property="og:image:secure_url" content="https://raw.githubusercontent.com/malkaalay/hs/main/images/fear-artwork.jpeg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:url" content="https://www.hsrealmusic.com/">
+  <meta property="og:site_name" content="HS Real Music">
+
+  <!-- Twitter / X Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Hicats Sam | HS Real Music — Official Artist Website">
+  <meta name="twitter:description" content="Listen to FEAR, discover the artist story, and follow the journey of cinematic rap from Gaza.">
+  <meta name="twitter:image" content="https://raw.githubusercontent.com/malkaalay/hs/main/images/fear-artwork.jpeg">
+</head>
+
+ <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MusicGroup",
+  "name": "Hicats Sam",
+  "alternateName": ["HS", "HS Real Music", "HSREALMUSIC" ,"FEAR" ,"Hicats sam","Hicats"],
+  "url": "https://www.hsrealmusic.com/profile.html",
+  "image": "https://raw.githubusercontent.com/malkaalay/hs/main/images/artist.png",
+  "genre": ["Cinematic Rap", "Dark Rap", "Hip Hop"],
+  "description": "Hicats Sam, also known as HS, is a Palestinian rap artist from Gaza City sharing emotional storytelling, cinematic rap music, and the FEAR music video.",
+  "sameAs": [
+    "https://www.instagram.com/hsrealmusic",
+    "https://www.tiktok.com/@hsrealmusic",
+    "https://hsrealmusic.bandcamp.com"
+  ]
+}
+</script>
+  
+  <style>
+    html{scroll-behavior:smooth}
+    *{margin:0;padding:0;box-sizing:border-box}
+
+    :root{
+      --bg:#030303;
+      --line:rgba(255,255,255,.09);
+      --text:#f2f2f2;
+      --muted:#8d8d8d;
+      --radius:24px;
+    }
+
+    body{
+      min-height:100vh;
+      font-family:Inter,Arial,Helvetica,sans-serif;
+      color:var(--text);
+      background:radial-gradient(circle at top,#171717 0%,#050505 38%,#000 100%);
+      overflow-x:hidden;
+    }
+
+    body::before{
+      content:"";
+      position:fixed;
+      inset:0;
+      pointer-events:none;
+      background:
+        linear-gradient(to bottom,rgba(255,255,255,.025),transparent 28%),
+        radial-gradient(circle at center,transparent 0%,rgba(0,0,0,.76) 82%);
+      z-index:-1;
+    }
+
+    .page{min-height:100vh;padding-bottom:58px}
+
+    .header{
+      width:100%;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      padding:22px 44px;
+      background:rgba(0,0,0,.6);
+      border-bottom:1px solid var(--line);
+      backdrop-filter:blur(14px);
+      position:sticky;
+      top:0;
+      z-index:50;
+    }
+
+    .brand{display:flex;align-items:center;gap:14px}
+
+    .logo-img{
+      width:52px;
+      height:52px;
+      object-fit:cover;
+      border-radius:16px;
+      border:1px solid var(--line);
+      box-shadow:0 18px 45px rgba(0,0,0,.52);
+      filter:brightness(.85) contrast(1.08);
+    }
+
+    .brand h3{font-size:19px;font-weight:900;letter-spacing:1.4px}
+    .brand small{display:block;margin-top:3px;color:var(--muted);letter-spacing:.3px}
+
+    .share-btn{
+      padding:11px 18px;
+      border-radius:999px;
+      border:1px solid var(--line);
+      background:linear-gradient(180deg,#202020,#141414);
+      color:#fff;
+      font-weight:800;
+      letter-spacing:.6px;
+      cursor:pointer;
+      transition:.25s ease;
+      box-shadow:0 12px 32px rgba(0,0,0,.35);
+    }
+
+    .share-btn:hover{
+      transform:translateY(-2px);
+      background:linear-gradient(180deg,#292929,#191919);
+    }
+
+    .content{
+      width:min(1080px,92%);
+      margin:76px auto 0;
+      display:flex;
+      flex-direction:column;
+      gap:24px;
+    }
+
+    .hero-card{
+      width:100%;
+      min-height:660px;
+      padding:42px 34px;
+      display:grid;
+      grid-template-columns:380px 1fr;
+      align-items:center;
+      gap:38px;
+      background:
+        linear-gradient(180deg,rgba(26,26,26,.9),rgba(8,8,8,.97)),
+        radial-gradient(circle at top,rgba(255,255,255,.08),transparent 48%);
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      box-shadow:0 38px 110px rgba(0,0,0,.8),inset 0 1px 0 rgba(255,255,255,.04);
+      position:relative;
+      overflow:hidden;
+    }
+
+    .hero-card::before{
+      content:"HICATS";
+      position:absolute;
+      top:34px;
+      right:24px;
+      font-size:clamp(72px,12vw,160px);
+      font-weight:950;
+      letter-spacing:-8px;
+      color:rgba(255,255,255,.025);
+      pointer-events:none;
+    }
+
+    .portrait-frame{
+      width:100%;
+      height:520px;
+      border-radius:32px;
+      overflow:hidden;
+      background:#080808;
+      border:1px solid rgba(255,255,255,.09);
+      box-shadow:0 35px 100px rgba(0,0,0,.85);
+      position:relative;
+      z-index:2;
+    }
+
+    .portrait-frame img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      object-position:center;
+      display:block;
+      filter:brightness(.78) contrast(1.1) saturate(.86);
+    }
+
+    .portrait-frame::after{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:linear-gradient(to top,rgba(0,0,0,.5),transparent 55%);
+      pointer-events:none;
+    }
+
+    .hero-copy{position:relative;z-index:2}
+
+    .label{
+      color:var(--muted);
+      font-size:12px;
+      font-weight:900;
+      letter-spacing:2.6px;
+      text-transform:uppercase;
+      margin-bottom:14px;
+    }
+
+    .artist-title{
+      font-size:clamp(40px,8vw,92px);
+      line-height:.92;
+      font-weight:950;
+      letter-spacing:3px;
+      margin-bottom:16px;
+    }
+
+    .artist-name{
+      font-size:26px;
+      color:#d9d9d9;
+      margin-bottom:18px;
+    }
+
+    .artist-name span{
+      color:#666;
+      font-size:15px;
+      margin-left:8px;
+      letter-spacing:2px;
+    }
+
+    .hero-description{
+      max-width:540px;
+      color:#c8c8c8;
+      line-height:1.85;
+      font-size:16px;
+      margin-bottom:22px;
+    }
+
+    .release-status{
+      display:inline-flex;
+      padding:10px 15px;
+      border-radius:999px;
+      background:rgba(255,255,255,.045);
+      border:1px solid var(--line);
+      color:#d0d0d0;
+      font-size:13px;
+      font-weight:850;
+      margin-bottom:24px;
+    }
+
+    .hero-actions{
+      display:flex;
+      flex-wrap:wrap;
+      gap:12px;
+    }
+
+    .main-btn,.ghost-btn{
+      min-height:52px;
+      padding:14px 22px;
+      border-radius:999px;
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      text-decoration:none;
+      font-weight:950;
+      transition:.25s ease;
+    }
+
+    .main-btn{background:#fff;color:#000;box-shadow:0 18px 44px rgba(255,255,255,.12)}
+    .main-btn:hover{transform:translateY(-2px) scale(1.02);background:#e7e7e7}
+
+    .ghost-btn{
+      color:#fff;
+      border:1px solid rgba(255,255,255,.12);
+      background:rgba(255,255,255,.045);
+    }
+
+    .ghost-btn:hover{transform:translateY(-2px);background:rgba(255,255,255,.08)}
+
+    .info-grid{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:14px;
+    }
+
+    .info-card{
+      padding:22px;
+      border-radius:22px;
+      background:linear-gradient(180deg,#121212,#070707);
+      border:1px solid var(--line);
+      box-shadow:0 18px 52px rgba(0,0,0,.48);
+    }
+
+    .info-card span{
+      display:block;
+      color:#777;
+      font-size:11px;
+      font-weight:900;
+      letter-spacing:1.8px;
+      text-transform:uppercase;
+      margin-bottom:8px;
+    }
+
+    .info-card strong{font-size:17px;color:#f2f2f2}
+
+    .section-card{
+      width:100%;
+      padding:34px 30px;
+      background:
+        linear-gradient(180deg,rgba(20,20,20,.96),rgba(5,5,5,.98)),
+        radial-gradient(circle at top,rgba(255,255,255,.06),transparent 45%);
+      border:1px solid rgba(255,255,255,.09);
+      border-radius:24px;
+      box-shadow:0 30px 80px rgba(0,0,0,.72),inset 0 1px 0 rgba(255,255,255,.04);
+    }
+
+    .section-kicker{
+      display:inline-flex;
+      padding:8px 13px;
+      border-radius:999px;
+      border:1px solid rgba(255,255,255,.1);
+      background:rgba(255,255,255,.045);
+      color:#bdbdbd;
+      font-size:12px;
+      font-weight:900;
+      letter-spacing:1.8px;
+      text-transform:uppercase;
+      margin-bottom:18px;
+    }
+
+    .section-card h2{
+      font-size:clamp(30px,5vw,50px);
+      line-height:1.05;
+      letter-spacing:-1px;
+      margin-bottom:18px;
+    }
+
+    .story-split{
+      display:grid;
+      grid-template-columns:minmax(0,1fr) 440px;
+      gap:36px;
+      align-items:start;
+    }
+
+    .story-copy{
+      max-width:680px;
+    }
+
+    #story, #support{
+      scroll-margin-top:110px;
+    }
+
+    .story-intro{
+      font-size:20px;
+      font-weight:900;
+      margin-bottom:16px;
+      color:#fff;
+      line-height:1.5;
+    }
+
+    .story-text p{
+      margin-bottom:15px;
+      line-height:1.9;
+      color:#cfcfcf;
+      font-size:16px;
+    }
+
+    .highlight-line{
+      color:#fff !important;
+      font-weight:850;
+      font-size:17px !important;
+      letter-spacing:.2px;
+    }
+
+    .story-image{
+      height:760px;
+      border-radius:34px;
+      overflow:hidden;
+      border:1px solid rgba(255,255,255,.1);
+      background:#050505;
+      box-shadow:0 34px 100px rgba(0,0,0,.82);
+      position:sticky;
+      top:110px;
+    }
+
+    .story-image img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      object-position:center top;
+      display:block;
+      filter:brightness(.84) contrast(1.12) saturate(.9);
+      transition:.6s ease;
+    }
+
+    .story-image::after{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:
+        linear-gradient(to top,rgba(0,0,0,.62),transparent 45%),
+        radial-gradient(circle at center,transparent 45%,rgba(0,0,0,.36) 100%);
+      pointer-events:none;
+    }
+
+    .story-image:hover img{transform:scale(1.035)}
+
+    .music-card{
+      width:100%;
+      padding:22px;
+      background:linear-gradient(135deg,#030303,#101010 48%,#050505);
+      border:1px solid rgba(255,255,255,.1);
+      border-radius:26px;
+      box-shadow:0 26px 78px rgba(0,0,0,.68),inset 0 1px 0 rgba(255,255,255,.04);
+    }
+
+    .music-head{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:14px;
+      margin-bottom:16px;
+      color:var(--muted);
+      font-size:12px;
+      font-weight:800;
+    }
+
+    .music-head strong{color:#f1f1f1;letter-spacing:.4px}
+
+    .bandcamp-frame-wrap{
+      width:100%;
+      max-width:650px;
+      margin:0 auto;
+      border-radius:22px;
+      overflow:hidden;
+      border:1px solid rgba(255,255,255,.08);
+      background:linear-gradient(180deg,#111,#050505);
+      box-shadow:0 24px 70px rgba(0,0,0,.65);
+      padding:14px;
+    }
+
+    .bandcamp-player{
+      display:block;
+      border:0;
+      width:100%;
+      height:120px;
+      border-radius:20px;
+      overflow:hidden;
+    }
+
+    .support-box{text-align:center}
+
+    .support-box p{
+      color:#cfcfcf;
+      font-size:16px;
+      line-height:1.85;
+      margin:0 auto 15px;
+      max-width:720px;
+    }
+
+    .support-box .strong-line{
+      color:#fff;
+      font-weight:850;
+      margin-top:20px;
+    }
+
+    .support-actions{
+      margin-top:28px;
+      display:flex;
+      gap:12px;
+      justify-content:center;
+      flex-wrap:wrap;
+    }
+
+    .support-btn,.outline-btn{
+      min-height:54px;
+      padding:15px 24px;
+      border-radius:999px;
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      text-decoration:none;
+      font-weight:950;
+      letter-spacing:.3px;
+      transition:.25s ease;
+    }
+
+    .support-btn{
+      background:#fff;
+      color:#000;
+      box-shadow:0 18px 44px rgba(255,255,255,.12);
+    }
+
+    .support-btn:hover{transform:translateY(-2px) scale(1.02);background:#e7e7e7}
+
+    .outline-btn{
+      color:#fff;
+      border:1px solid rgba(255,255,255,.12);
+      background:rgba(255,255,255,.045);
+    }
+
+    .outline-btn:hover{transform:translateY(-2px);background:rgba(255,255,255,.08)}
+
+    .music-link{
+      width:100%;
+      min-height:68px;
+      padding:18px 22px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      text-decoration:none;
+      color:#fff;
+      background:linear-gradient(180deg,#181818,#101010);
+      border:1px solid var(--line);
+      border-radius:20px;
+      font-weight:850;
+      transition:.25s ease;
+      box-shadow:0 16px 45px rgba(0,0,0,.42);
+    }
+
+    .music-link small{
+      display:block;
+      margin-top:5px;
+      color:var(--muted);
+      font-size:12px;
+      font-weight:650;
+    }
+
+    .music-link:hover{
+      transform:translateY(-2px);
+      background:linear-gradient(180deg,#242424,#181818);
+      box-shadow:0 22px 55px rgba(0,0,0,.56);
+    }
+
+    .arrow{color:#bdbdbd;font-size:22px}
+
+    footer{
+      margin-top:42px;
+      text-align:center;
+      color:#626262;
+      font-size:13px;
+    }
+
+    @media(max-width:900px){
+      .hero-card{
+        grid-template-columns:1fr;
+        text-align:center;
+      }
+
+      .portrait-frame{
+        max-width:400px;
+        margin:0 auto;
+      }
+
+      .hero-actions{justify-content:center}
+
+      .story-split{
+        grid-template-columns:1fr;
+      }
+
+      .story-copy{
+        max-width:100%;
+      }
+
+      .story-image{
+        position:relative;
+        top:auto;
+        height:680px;
+        order:-1;
+      }
+    }
+
+    @media(max-width:640px){
+      .header{padding:17px 18px}
+      .brand h3{font-size:16px}
+      .logo-img{width:44px;height:44px}
+      .share-btn{padding:10px 13px;font-size:12px}
+      .content{margin-top:54px;width:min(100% - 28px,980px)}
+      .hero-card{padding:28px 20px 34px;min-height:auto}
+      .portrait-frame{height:430px}
+      .info-grid{grid-template-columns:1fr}
+      .section-card{padding:24px 18px}
+      .story-text p{font-size:15px}
+      .story-image{height:560px;border-radius:26px}
+      .support-btn,.outline-btn,.main-btn,.ghost-btn{width:100%}
+    }
+
+    .back-btn{
+  min-height:42px;
+  padding:10px 15px;
+  border-radius:999px;
+  border:1px solid rgba(255,255,255,.1);
+  background:rgba(255,255,255,.045);
+  color:#fff;
+  text-decoration:none;
+  font-size:13px;
+  font-weight:900;
+  letter-spacing:.4px;
+  transition:.25s ease;
+  white-space:nowrap;
+}
+
+.back-btn:hover{
+  transform:translateY(-2px);
+  background:rgba(255,255,255,.09);
+}
+
+@media(max-width:640px){
+  .back-btn{
+    padding:9px 12px;
+    font-size:12px;
+  }
+}
+  </style>
+</head>
+
+<body>
+  <main class="page">
+   <header class="header">
+  <a class="back-btn" href="index.html" aria-label="Back to home">
+    ← Back
+  </a>
+
+  <div class="brand">
+    <img class="logo-img" src="https://raw.githubusercontent.com/malkaalay/hs/main/images/artist.png" alt="Hicats Sam profile">
+    <div>
+      <h3>HICATS SAM</h3>
+      <small>Official artist page</small>
+    </div>
+  </div>
+
+  <div style="display:flex;gap:10px;align-items:center">
+    <a class="share-btn" href="/ar/profile.html" hreflang="ar" lang="ar" style="display:inline-flex;align-items:center;justify-content:center;text-decoration:none">العربية</a>
+    <button class="share-btn" onclick="sharePage()">SHARE</button>
+  </div>
+</header>
+
+    <section class="content">
+      <section class="hero-card">
+        <div class="portrait-frame">
+          <img src="https://raw.githubusercontent.com/malkaalay/hs/main/images/sam-front.png" alt="Hicats Sam cinematic portrait">
+        </div>
+
+        <div class="hero-copy">
+          <div class="label">Rapper</div>
+          <h1 class="artist-title">HICATS SAM</h1>
+          <!-- <div class="artist-name">Hicats Sam <span>HS</span></div> -->
+
+          <p class="hero-description">
+            Hicats Sam, also known as HS, is a Palestinian Rapper ,Somgwriter and Singer   from Gaza City, spreading peace and turning survival, trauma, and war into emotional music and visual storytelling.
+          </p>
+
+          <div class="release-status">Music Video Available on Platforms</div>
+
+          <div class="hero-actions">
+            <a class="main-btn" href="#support">Support The Journey</a>
+            <a class="ghost-btn" href="#story">
+              Read Sam's Story
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="info-grid">
+        <div class="info-card">
+          <span>Artist</span>
+          <strong>Hicats Sam / HS</strong>
+        </div>
+
+        <div class="info-card">
+          <span>From</span>
+          <strong>Gaza City, Palestine</strong>
+        </div>
+
+         <div class="info-card">
+          <span>Age</span>
+          <strong>23 years old</strong>
+        </div>
+
+
+        <div class="info-card">
+          <span>Orgin Name</span>
+          <strong>Louay Miqdad</strong>
+        </div>
+
+         <div class="info-card">
+          <span>Name Concept</span>
+          <strong>Hicats caries a meaning of Volcano On Mars </strong>
+        </div>
+
+        
+        <div class="info-card">
+          <span>Sound</span>
+          <strong>Rapping & Singing</strong>
+        </div>
+      </section>
+
+      <section class="music-card">
+        <div class="music-head">
+          <strong>Latest Works</strong>
+          
+        </div>
+
+        <div class="bandcamp-frame-wrap">
+          <iframe
+            class="bandcamp-player"
+            src="https://bandcamp.com/EmbeddedPlayer/track=3218786859/size=large/bgcol=333333/linkcol=ffffff/tracklist=false/artwork=small/transparent=true/"
+            seamless>
+            <a href="https://hsrealmusic.bandcamp.com/track/fear">FEAR By Hicats Sam</a>
+          </iframe>
+        </div>
+      </section>
+
+      <section class="section-card">
+        <div class="story-split">
+          <div class="story-copy" id="story">
+            <div class="section-kicker">Artist Story</div>
+            <h2>From Survival To Music</h2>
+
+            <div class="story-intro">
+              <strong>I’m Sam from Gaza City , 23-year-old Palestinian artist turning survival into cinematic rap music.</strong>
+            </div>
+
+            <div class="story-text">
+              <p>I’m Sam from Gaza City, also known as Hicats Sam or HS. I’m 23 years old, and I graduated from the University College of Applied Science with a diploma in Software and Database.</p>
+
+              <p>I started learning music and writing my own songs in 2023, at the beginning of the war, after trauma changed my life completely. That is when music became more than a dream for me ,it became a way to survive and tell my story.</p>
+
+              <p>The story began when the IDF bombed our house. My family was under the rubble , my mother, my father, my two brothers, and my cousins. In one moment, I lost everything I had: my home, my laptop, and the small studio I was building to begin my passion for rap and Arabic music.</p>
+
+              <p class="highlight-line">I lost almost everything, but I never stopped believing in music.</p>
+
+              <p>After that, we were displaced to a school because we thought it would keep my family and me safe. But the bombing never stopped. Suddenly, the army was outside, shooting at the school, and we were forced to flee again to the south.</p>
+
+              <p>During that displacement, I saw things I will never forget ,bodies on the ground and dogs eating them. That moment stayed inside me, and it became part of the pain behind my music.</p>
+
+              <p>We reached the south and started living in tents. During that time, I was writing tracks like 'Homeless'and'Lost Mom' and 'Bad Story' . I kept listening to rap music, teaching myself English, and shaping the sound that would become HS Real Music.</p>
+
+              <p>I decided to rap in English because it is a global language. I believe my story from Gaza City can reach people around the world through cinematic rap, emotion, and real lyrics.</p>
+
+              <p>I spent years with almost nothing ,just trying to survive each day while still planning for my future in music. When I came back, there was no home left. My whole town had been destroyed, and I could not find a real place to stay.</p>
+
+              <p class="highlight-line">Alhamdulillah, I’m living in a tent right now with my family. I won’t lie ,life here is extremely hard.</p>
+
+              <p>Even now, I’m trying to survive the day, find a way forward, and keep chasing my dream of becoming a rapper and music artist. I want to keep creating songs, visuals, and stories that show what life in Gaza really feels like.</p>
+
+              <p>Along the way, I met people who believed in me: Qasam, Raji, Billy, and Garry. Raji is a rocker and has a band in Gaza called Osprey V ,yes, rock is still alive in Gaza. Qasam is a producer with a studio, and he helped me record my music.</p>
+
+              <p>Billy from the United Kingdom helped me improve my flow, delivery, accent, and confidence. Learning English without real practice is hard, but his support helped me grow as an artist.</p>
+
+              <p>Garry Mc from Ireland, the leader of The Kabin Studio, also helped me improve my music skills. I appreciate all of them deeply. They are a gift from God, and their support helped me keep going when support was rare.</p>
+
+               <p class="highlight-line">Why I choosen NF's Fear Track</p>
+
+<p>
+  I am a big fan of NF, and 'FEAR' is one of the tracks that speaks to me the most. I feel every word, because it reminds me of what I have lived through during the war in Gaza. I changed a few lyrics in the cover to make the story closer to my own reality in Gaza City, where I am still trying to survive, create music, and keep my voice alive.
+</p>
+
+              <p>I spent five months working on this track. It sounds insane, but this is life here in Gaza City. I tried so hard to release it as soon as possible, and I did everything I could to make it real.</p>
+
+              <p class="highlight-line">The FEAR music video by Hicats Sam is out now on platforms, and this is just the beginning.</p>
+
+  
+            </div>
+          </div>
+
+          <div class="story-image">
+            <img src="https://raw.githubusercontent.com/malkaalay/hs/main/images/sam-side.png" alt="Hicats Sam cinematic side portrait">
+          </div>
+        </div>
+      </section>
+
+      <section class="section-card support-box" id="support">
+        <div class="section-kicker">Support The Story</div>
+
+        <h2>Let The World Listen</h2>
+
+        <p>I’m not asking for support to grow a career only. I’m asking for support to keep going.</p>
+
+        <p>Life in Gaza is hard. Your support can help me find a basic way to live, stay focused on music, record more songs, and keep sharing what I’ve lived through with the world.</p>
+
+        <p>Every dollar matters more than you think. Even $1 can help me stay on this path and finish the music I still need to record and produce.</p>
+
+        <p class="strong-line">If this track reached you, then you already understand.</p>
+
+        <div class="support-actions">
+          <a class="support-btn" href="https://www.paypal.com/paypalme/sampal2003" target="_blank" rel="noopener">
+            Donate via PayPal
+          </a>
+
+          <a class="outline-btn" href="https://chuffed.org/project/support-sam-in-gaza" target="_blank" rel="noopener">
+            Support on GoFundMe
+          </a>
+
+
+        </div>
+      </section>
+
+      <a class="music-link" href="https://www.instagram.com/hsrealmusic?igsh=cXA3dmszcm4ybGd4" target="_blank" rel="noopener">
+        <span>Instagram <small>Follow the journey</small></span>
+        <span class="arrow">→</span>
+      </a>
+
+      <a class="music-link" href="https://www.tiktok.com/@hsrealmusic?_r=1&_t=ZS-9653AmsCTu4" target="_blank" rel="noopener">
+        <span>TikTok <small>Watch new updates</small></span>
+        <span class="arrow">→</span>
+      </a>
+
+      <a class="music-link" href="#" target="_blank" rel="noopener">
+        <span>YouTube <small>Watch The Music Video</small></span>
+        <span class="arrow">→</span>
+      </a>
+
+      <a class="music-link" href="#">
+        <span>Spotify <small>Coming soon</small></span>
+        <span class="arrow">→</span>
+      </a>
+
+      <a class="music-link" href="#">
+        <span>Apple Music <small>Coming soon</small></span>
+        <span class="arrow">→</span>
+      </a>
+    </section>
+
+    <footer>© 2026 Hicats Sam / HS</footer>
+  </main>
+
+  <script>
+    async function sharePage() {
+      const data = {
+        title: "HICATS SAM | HS",
+        text: "Official artist page of Hicats Sam / HS",
+        url: window.location.href
+      };
+
+      if (navigator.share) {
+        await navigator.share(data);
+      } else {
+        await navigator.clipboard.writeText(window.location.href);
+        alert("Link copied");
+      }
+    }
+  </script>
+</body>
+</html>
